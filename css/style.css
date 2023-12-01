@@ -1,0 +1,368 @@
+/*RESETS CSS*/
+* {
+    margin: 0;
+    font-family: microsoft new tai lue;
+    padding: 0;
+    box-sizing: border-box;   
+}
+li,a { 
+    display: inline-block;
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+main {
+    min-height: 100vw;
+}
+.nav-item a { 
+    color:#fff; 
+}
+.container-fluid { 
+   margin-left: 1em;
+ 
+}
+
+/*
+#header { 
+   position: fixed;
+   background-color: black;
+   width: 100vw;
+   display: grid;  
+}
+#navBar {
+    display: flex;   
+}
+.conteiner__navigation--logo{
+    width: 100vw;
+    display:flex;    
+} /*
+#navBar .search {
+    align-self: flex-start;    
+}    
+#navBar .marvelnav {
+    width: 300px;
+    height: 50px;    
+    align-self: center;       
+}
+#navBar .navigation__container--section {
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: row;  
+}
+#navBar a { 
+    color: white;
+    padding-right: 10px;
+    text-align: center;
+}*/
+                                        /*===========FOOTER============*/
+  
+#footer{
+    color:aliceblue; 
+    background-color: rgb(35, 34, 36);
+    height: 15em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;    
+    margin-top: 1px;
+}
+.redesSociales a{ 
+    color: aliceblue;
+    font-family: sedgwick ave display;
+
+}
+.redesSociales i { 
+    border-radius: 10px;
+    font-size: 30px;
+    padding: .5em;
+   
+}
+.redesSociales p { 
+    font-family: sedgwick ave display;
+}
+#footer i { 
+    color: black;
+   
+}
+.containerFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 80%;
+
+}
+.footerPolitic { 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10%;
+    gap: 1em;
+   
+}
+@media screen and (max-width: 650px) {
+    .containerFooter  { 
+        display: flex;
+        align-items: center;
+       
+        flex-direction: column;       
+    }
+    .footerPolitic  {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        height: auto;
+        font-size: 10px;
+        gap: 0;       
+    }
+    .logofooter2 { 
+        height: 60px;
+    }
+    .redesSociales i {
+        font-size: 15px;
+    }    
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        height: 40em;        
+    }
+    
+}
+/*=======MAIN========*/
+#main{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/images/index/marvel-background-web.jpg);
+    
+}
+#carousel1, #carousel2, #carousel3 { 
+    width: 80vw; 
+    background-color: #f0f0f0;
+    box-shadow: 
+    30px 0 20px rgba(0, 0, 0, 0.6),
+    -30px 0 20px rgba(0, 0, 0, .6);
+}
+#carousel1 a {
+    z-index: 100;
+    color: white;
+    display: block;
+    width: 8em;
+    border-width: 1px 2px 1px 2px;
+    border-style: solid;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-color: #fff;
+   border-radius: 2px;
+   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
+}
+#carousel2 a { 
+    z-index: 100;
+    color: white;
+    display: block;
+    width: 8em;
+    border-width: 1px 2px 1px 2px;
+    border-style: solid;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-color: #fff;
+   border-radius: 2px;
+   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
+
+}
+#carousel3 a {
+    z-index: 100;
+    color: white;
+    display: block;
+    width: 8em;
+    border-width: 1px 2px 1px 2px;
+    border-style: solid;
+    background-color: transparent;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-color: #fff;
+   border-radius: 2px;
+   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
+}
+
+/*========GAMES==============*/
+.headerSpiderman { 
+    color: #fff;
+    width: 100vw;
+    height: 20em;
+    background-image: url(../images/games/marvelsspiderman2header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.headerSpidermanImg { 
+    font-size: 1em;
+}
+.allGames {
+    display:block;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    margin-top: 1em;
+}
+.allGames h2 {
+    font-size: 1.5em;
+}
+.contenedor__galeriaJuegos {
+    position: relative;
+    width: 100vw;
+    height: 80em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor__galeriaJuegos--1 { 
+    width: 83vw;
+    height: 65em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.3em;
+    grid-area: 
+    "galeriajuegos1" "galeriajuegos2" "galeriajuegos3"
+    "galeriajuegos4" "galeriajuegos5" "galeriajuegos6"
+    ;
+
+}
+.galeriajuegos1 {
+    grid-area: "galeriajuegos1";
+    background-image: url(../images/games/bacon.jpg);
+    background-size: contain;
+}
+.galeriajuegos2 { 
+    grid-area: "galeriajuegos2";
+    background-image: url(../images/games/marvelpuzzlequest_lob_crd_02_4.jpg);
+    background-size: cover;
+}
+.galeriajuegos3 { 
+    grid-area:"galeriajuegos3";
+    background-image: url(../images/games/marvelsavengers_lob_crd_01.jpg);
+    background-size: cover;
+}
+.galeriajuegos4 { 
+    grid-area: "galeriajuegos4";
+    background-image: url(../images/games/marvelsguardiansofthegalaxy_lob_crd_02.jpg);
+    background-size: cover;
+}
+.galeriajuegos5 { 
+    grid-area: "galeriajuegos5";
+    background-image: url(../images/games/marvelspidermangames.jpg);
+    background-size: cover;
+}
+.galeriajuegos6 {
+    grid-area: "galeriajuegos6";
+    background-image: url(../images/games/msmmm_lob_crd_02.jpg);
+    background-size: cover;
+   
+}
+.buttons {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+    
+}
+.buttons a {     
+    font-size: 1.2em;    
+}
+
+@media screen and (max-width: 1100px){
+    .contenedor__galeriaJuegos--1 { 
+        width: 70vw;
+        height: 95%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2em;
+        row-gap: 4em;
+        grid-area: 
+        "galeriajuegos1" "galeriajuegos2" 
+        "galeriajuegos3" "galeriajuegos4"
+        "galeriajuegos5" "galeriajuegos6"
+        ;
+    
+    }
+    .contenedor__galeriaJuegos {
+        position: relative;
+        width: 100vw;
+        height: 100em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerSpiderman {
+        background-position: center;
+    } 
+    
+}
+@media screen and (max-width: 877px) { 
+    .contenedor__galeriaJuegos--1 { 
+        width: 70vw;
+        height: 98%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        row-gap: 4em;
+        grid-area: 
+        "galeriajuegos1" 
+        "galeriajuegos2" 
+        "galeriajuegos3"
+        "galeriajuegos4"
+        "galeriajuegos5" 
+        "galeriajuegos6"
+        ;
+    
+    }
+    .contenedor__galeriaJuegos {
+        position: relative;
+        width: 100vw;
+        height: 300em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerSpiderman {
+        background-position: center right;
+    } 
+    
+    
+}
+@media screen and (max-width: 480px) {
+    .contenedor__galeriaJuegos {
+        position: relative;
+        width: 100vw;
+        height: 200em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .headerSpidermanImg  p { 
+        display: none;
+    }
+    .buttons { 
+        gap: .8em;
+    }
+    .buttons a {     
+        font-size: 1em;    
+    }
+         
+}
+
+
