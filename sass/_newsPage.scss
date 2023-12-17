@@ -1,0 +1,32 @@
+/*=================NEWS PAGE========*/
+.newsHeader { 
+    display: flex;
+    position: relative;
+    height: 30em;
+    flex-direction: column;
+    width: 100vw;
+    
+    box-sizing: border-box;
+    justify-content: center;
+   
+}
+.wakandaNews { 
+    width: 46em;
+    height: 20em;
+    margin-left: 1em;
+    background-image: url(../images/news/bp_wakandaforever_book_card.jpg);
+    background-position:  center;
+   
+}
+.newsHeader h1 { 
+    margin-left: .4em;
+    margin-top: 0.1em;
+    text-align: start;
+  
+
+}
+.newsHeader p { 
+    margin-left: .9em;
+    text-align: start;
+   
+}

@@ -1,0 +1,76 @@
+   /*===========FOOTER============*/
+  
+   #footer{
+    color:aliceblue; 
+    background-color: rgb(35, 34, 36);
+    height: 15em;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;    
+    margin-top: 1px;
+}
+.redesSociales a{ 
+    color: aliceblue;
+    font-family: sedgwick ave display;
+
+}
+.redesSociales i { 
+    border-radius: 10px;
+    font-size: 30px;
+    padding: .5em;
+   
+}
+.redesSociales p { 
+    font-family: sedgwick ave display;
+}
+#footer i { 
+    color: black;
+   
+}
+.containerFooter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 80%;
+
+}
+.footerPolitic { 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10%;
+    gap: 1em;
+   
+}
+@media screen and (max-width: 650px) {
+    .containerFooter  { 
+        display: flex;
+        align-items: center;
+       
+        flex-direction: column;       
+    }
+    .footerPolitic  {
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        height: auto;
+        font-size: 10px;
+        gap: 0;       
+    }
+    .logofooter2 { 
+        height: 60px;
+    }
+    .redesSociales i {
+        font-size: 15px;
+    }    
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        height: 40em;        
+    }
+    
+}

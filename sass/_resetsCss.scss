@@ -1,0 +1,23 @@
+/*RESETS CSS*/
+* {
+    margin: 0;
+    font-family: microsoft new tai lue;
+    padding: 0;
+    box-sizing: border-box;   
+}
+li,a { 
+    display: inline-block;
+    font-style: none;
+    text-decoration: none;
+    color: black;
+}
+main {
+    min-height: 100vw;
+}
+.nav-item a { 
+    color:#fff; 
+}
+.container-fluid { 
+   margin-left: 1em;
+ 
+}
