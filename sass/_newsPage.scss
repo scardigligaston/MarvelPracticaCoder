@@ -5,28 +5,298 @@
     height: 30em;
     flex-direction: column;
     width: 100vw;
-    
-    box-sizing: border-box;
     justify-content: center;
+    margin-top: 2em;
+
+
+     h1 { 
+        margin-left: .8em;
+        margin-top: .5em;
+        text-align: start;
+      
+    
+    }
+     p { 
+        margin-left: 2em;
+        text-align: start;
+       
+    }
+    .wakandaNews__img { 
+        margin-top: 3em;
+        width: 46em;
+        height: 20em;
+        margin-left: 2em;
+        background-image: url(../images/news/bp_wakandaforever_book_card.jpg);
+        background-position:  center;
+       
+    }
+    
    
 }
-.wakandaNews { 
-    width: 46em;
-    height: 20em;
-    margin-left: 1em;
-    background-image: url(../images/news/bp_wakandaforever_book_card.jpg);
-    background-position:  center;
-   
-}
-.newsHeader h1 { 
-    margin-left: .4em;
-    margin-top: 0.1em;
-    text-align: start;
-  
+.newsSecond {
+    position: relative;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 30em;
+    width: 100vw;  
+    margin-top: 3em; 
+    gap: 6em;
+
+    .boxOne{ 
+        display: relative;
+        box-sizing: border-box;
+        width: 20%;
+
+        .newsSecond__img--1 { 
+            background-image: url(../images/news/bp_wf_book_card.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 23em;
+            height: 13em;
+            position: relative;        
+        }
+        p {
+            display: inline-block;
+            font-size: .8em;
+            margin-top: 1em;
+        }
+
+    }
+
+    
+    .boxTwo { 
+        display: relative;
+        width: 20%;
+        
+        .boxTwo__img{
+            background-image: url(../images/news/marvel_7.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 23em;
+            height: 13em;
+        }
+        p {
+            display: inline-block;
+            margin-top: 1em;
+            font-size: .8em;
+        }
+
+
+    }
+    .threeBox{
+        position:relative;
+        display: flex;
+        width: 30%;       
+        flex-direction: column;
+
+        p { 
+            color: black;
+            display: inline-block;
+            font-size: 1em;
+            margin-top: 1em;
+        }
+
+        .threeBox__img{
+
+            display: grid;
+            grid-template-rows: 16em;
+            grid-template-columns: repeat(3, 1fr);
+            
+            grid-template-areas:
+            "threeBoxImg1" "threeBoxImg2" "threeBoxImg3" ; 
+            
+            
+            
+            .threeBoxImg1 { 
+                grid-area: "threeBoxImg1";
+                background-image: url(../images/news/1.jpg);
+                background-size: cover;
+            }
+            .threeBoxImg2{
+                grid-area: "threeBoxImg2";
+                background-image: url(../images/news/5.jpg);
+                background-size: cover;
+    
+            }
+            .threeBoxImg3{
+                grid-area: "threeBoxImg3";
+                background-image: url(../images/news/4.jpg);
+                background-size: cover;
+            }           
+
+        }
+        
+    }
+
+
 
 }
-.newsHeader p { 
-    margin-left: .9em;
-    text-align: start;
+@media screen and (max-width: 1200px) {
+    .newsSecond { 
+        position: relative;
+        display: flex;
+        flex-direction: column;     
+        height: 60em;
+        gap: 2em;
+        margin-left: 2em;
+    }
+    .newsThird__header {
+        position: relative;
+        display: flex;
+        align-self: start;
+       
+    }
+    .newsThird__second {
+        position: relative;
+        display: flex;
+        align-self: start;
+
+    }
+    .newsThird__third {
+        position: relative;
+        display: flex;
+        align-self: start;
+
+    }
+
+    
+}
+@media screen and (max-width: 780px) {
+    .newsHeader { 
+        position: relative;
+        display:flex;
+        height: 30em;
+        width: 100%;
+        .wakandaNews__img { 
+            position: relative;
+            margin-top: 1em;
+            margin-left: 1em; 
+            width: 40em;
+            background-position: center;
+            background-size: cover;
+        }
+        p { 
+            margin-left: 1em;
+            margin-top: 1em;
+            font-size: 1em;
+            display: inline-block;
+            
+        }
+       
+    }
+    .threeBox { 
+        position:relative;
+        width: 100%;
+        margin-bottom: 4em;
+
+        .threeBox__img{
+            display: grid;
+            width: 30em;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+    }
+    .boxOne { 
+        margin-top: 3em;
+    }
+    .newsThird { 
+       margin-top: 2em;
+      
+       
+
+        
+    }
+
+    
+
+}
+.newsThird {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 { 
+        
+        font-size: 3em;
+        display: inline-block;
+        position: relative;
+        align-self: flex-start;
+        margin-left: 1em;
+    }
+
+    .newsThird__header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+        width: 80vw;
+        height: 32em;
+        
+        .newsThird__header--img {
+            background-image: url("../images/news/echo_2.png");
+            width: 80%;
+            height: 26em;
+            background-size: cover;
+
+        }
+        p{
+            display: inline-block;
+            font-size: 1.2em;
+        }
+
+
+    }
+   .newsThird__second {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+        width: 80%;
+        height: 32em;
+       
+        
+    .newsThird__second--img { 
+        background-image: url("../images/news/2.jpg");
+        width: 80%;
+        height: 29em;
+        background-size: cover;
+
+    }
+    p {
+        display: inline-block;
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+    
+   } 
+   .newsThird__third { 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+        width: 80%;
+        height: 32em;
+        margin-bottom: 3em;
+
+        .newsThird__video { 
+            width: 80%;
+            height: 29em;
+        }
+        p {
+            display: inline-block;
+            font-size: 1.2em;
+            margin-top: 1em;
+        }
+        
+   }
    
 }
+
+

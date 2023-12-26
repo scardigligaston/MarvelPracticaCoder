@@ -1,0 +1,155 @@
+.headerMovies { 
+    background-image: url(../images/movies/themarvels_lob_mas_min_mob_01.jpg);
+    color: #fff;
+    width: 100vw;
+    height: 30em;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+      
+}
+.marvelMoviesH2 { 
+    text-align: center;
+    font-size: 20em;
+    width: 100vw;
+    margin-top: .1em;
+    margin-bottom: .1em;
+
+}
+.gridMovies__container--flex {
+    position: relative;
+    width: 100vw;
+    height: 80em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .gridMovies__container { 
+        display: grid;
+        height: 80em;
+        width: 70vw;
+        position: relative;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2em;
+        grid-area: 
+        "movie1" "movie2" "movie3"
+        "movie4" "movie5" "movie6"
+        ;
+    
+        .movie1 { 
+            grid-area: "movie1";
+            background-image: url(../images/movies/antman.jpg);
+            background-size: contain;
+        }
+        .movie2 { 
+            grid-area: "movie2";
+            background-image: url(../images/movies/avengersendgame.jpg);
+            background-size: contain;
+        }
+        .movie3 {
+            grid-area: "movie3";
+            background-image: url(../images/movies/avengersinfinitywar.jpg);
+            background-size: contain;
+        }
+        .movie4 { 
+            grid-area: "movie4";
+            background-image: url(../images/movies/avengerssecretwars.jpg);
+            background-size: contain;
+        }
+        .movie5 { 
+            grid-area: "movie5";
+            background-image: url(../images/movies/blackpantherwakandaforever_lob_crd_06.jpg);
+            background-size: contain;
+        }
+        .movie6 { 
+            grid-area: "movie6";
+            background-image: url(../images/movies/themarvels_lob_mas_min_mob_01.jpg);
+            background-size: contain; 
+
+        }
+
+    
+    
+    }
+    
+
+}
+.buttoms { 
+    margin-top: 1em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  
+
+    p,a  { 
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        font-weight: 100;
+         
+    }
+
+
+}
+@media screen and (max-width: 1200px) {
+    .gridMovies__container--flex { 
+        .gridMovies__container { 
+            display: grid;
+            height: 80em;
+            width: 50vw;
+            position: relative;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 2em;
+            grid-area: 
+            "movie1" "movie2" 
+            "movie3" "movie4"
+            "movie5" "movie6"
+            ;
+        
+        }
+
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .gridMovies__container--flex {
+        position: relative;
+        width: 100vw;
+        height: 130em;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+
+        .gridMovies__container { 
+            display: grid;
+            height: 130em;
+            width: 40vw;
+            position: relative;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            gap: 3em;
+            grid-area: 
+            "movie1" 
+            "movie2" 
+            "movie3" 
+            "movie4"
+            "movie5" 
+            "movie6"
+            ;
+        
+        }
+
+    }
+    
+
+    
+}
