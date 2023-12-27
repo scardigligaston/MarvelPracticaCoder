@@ -15,10 +15,14 @@
 }
 .marvelMoviesH2 { 
     text-align: center;
-    font-size: 20em;
+    
     width: 100vw;
-    margin-top: .1em;
-    margin-bottom: .1em;
+   
+    h2 { 
+        margin-top: 2em;
+        font-size: 2em;
+        font-weight: bold;
+    }
 
 }
 .gridMovies__container--flex {
@@ -31,7 +35,7 @@
 
     .gridMovies__container { 
         display: grid;
-        height: 80em;
+        height: 55em;
         width: 70vw;
         position: relative;
         grid-template-columns: repeat(3, 1fr);
@@ -100,15 +104,27 @@
 
 }
 @media screen and (max-width: 1200px) {
+    .marvelMoviesH2 { 
+        h2 { 
+            margin-bottom: 1em;
+
+        }
+    }
+
     .gridMovies__container--flex { 
+        position: relative;
+        width: 100vw;
+        height: 80em;
+        
+       
         .gridMovies__container { 
             display: grid;
             height: 80em;
-            width: 50vw;
+            width: 53vw;
             position: relative;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
-            gap: 2em;
+            gap: 4em;
             grid-area: 
             "movie1" "movie2" 
             "movie3" "movie4"
@@ -121,35 +137,88 @@
     
 }
 @media screen and (max-width:800px) {
+    .marvelMoviesH2 { 
+        h2 { 
+            margin-bottom: 1em;
+
+        }
+    }
     .gridMovies__container--flex {
         position: relative;
         width: 100vw;
-        height: 130em;
+        height: 90em;
         display: flex;
         justify-content: center;
         align-items: center; 
 
         .gridMovies__container { 
             display: grid;
-            height: 130em;
-            width: 40vw;
+            height: 80em;
+            width: 80vw;
             position: relative;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             gap: 3em;
             grid-area: 
-            "movie1" 
-            "movie2" 
-            "movie3" 
-            "movie4"
-            "movie5" 
-            "movie6"
-            ;
+            "movie1" "movie2" 
+            "movie3" "movie4"
+            "movie5" "movie6" 
+             ;
         
         }
 
     }
     
 
+    
+}
+@media screen and (max-width:520px) {
+    .marvelMoviesH2 { 
+        h2 { 
+            margin-bottom: 1em;
+
+        }
+    }
+    .gridMovies__container--flex { 
+        width: 100vw;
+        height: 200em;
+
+        .gridMovies__container { 
+            display: grid;
+            height: 200em;
+            width: 70vw;
+            position: relative;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+            gap: 2em;
+            grid-area: 
+            "movie1" 
+            "movie2" 
+            "movie3"
+            "movie4"
+            "movie5" 
+            "movie6" 
+             ;
+        
+        }
+    }
+    .headerMovies {
+        
+         
+        h1 { 
+            backdrop-filter: blur( .3px);
+            box-shadow: 0px 10px 10px 10px (rgba(43, 21, 21, 0.733));
+            font-size: 1.2em;
+            margin-bottom: 2em;
+
+        }
+        h2 {
+            backdrop-filter: blur(2px);
+            box-shadow: 0px 10px 10px 10px(rgba(10, 6, 6, 0.555));
+            font-size: 1.2em;
+
+
+        } 
+    }
     
 }

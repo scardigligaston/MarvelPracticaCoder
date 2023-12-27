@@ -1,6 +1,6 @@
    /*===========FOOTER============*/
   
-   #footer{
+#footer{
     color:aliceblue; 
     background-color: rgb(35, 34, 36);
     height: 15em;
@@ -8,69 +8,78 @@
     flex-wrap: wrap;
     width: 100vw;    
     margin-top: 1px;
-}
-.redesSociales a{ 
-    color: aliceblue;
-    font-family: sedgwick ave display;
 
-}
-.redesSociales i { 
-    border-radius: 10px;
-    font-size: 30px;
-    padding: .5em;
-   
-}
-.redesSociales p { 
-    font-family: sedgwick ave display;
-}
-#footer i { 
-    color: black;
-   
-}
-.containerFooter {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    width: 100vw;
-    height: 80%;
-
-}
-.footerPolitic { 
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 10%;
-    gap: 1em;
-   
-}
-@media screen and (max-width: 650px) {
-    .containerFooter  { 
-        display: flex;
-        align-items: center;
+    i { 
+        color: black;
        
-        flex-direction: column;       
     }
-    .footerPolitic  {
+    .footerPolitic { 
         display: flex;
-        flex-direction:column;
-        justify-content:center;
-        height: auto;
-        font-size: 10px;
-        gap: 0;       
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 10%;
+        gap: 1em;
+       
     }
-    .logofooter2 { 
-        height: 60px;
+    .containerFooter {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        height: 80%;
+
+        .redesSociales {
+            a{ 
+                color: aliceblue;
+                font-family: sedgwick ave display;    
+            }
+            i { 
+                border-radius: 10px;
+                font-size: 30px;
+                padding: .5em;
+            }
+            p { 
+            font-family: sedgwick ave display;
+            } 
+        }
+    
     }
-    .redesSociales i {
-        font-size: 15px;
-    }    
+}
+
+@media screen and (max-width: 650px) {   
     #footer {
         display: flex;
         flex-wrap: wrap;
-        height: 40em;        
+        height: 40em;  
+
+
+        .footerPolitic  {
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+            height: auto;
+            font-size: 10px;
+            gap: 0;       
+        }  
+        .containerFooter  { 
+            display: flex;
+            align-items: center;
+            flex-direction: column;   
+            
+            .logofooter2 { 
+                height: 60px;
+            }
+            .redesSociales {
+                i {
+                    font-size: 15px;
+                }    
+        
+            } 
+        }
+            
     }
     
 }

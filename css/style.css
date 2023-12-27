@@ -35,36 +35,10 @@ main {
   width: 100vw;
   margin-top: 1px;
 }
-
-.redesSociales a {
-  color: aliceblue;
-  font-family: sedgwick ave display;
-}
-
-.redesSociales i {
-  border-radius: 10px;
-  font-size: 30px;
-  padding: 0.5em;
-}
-
-.redesSociales p {
-  font-family: sedgwick ave display;
-}
-
 #footer i {
   color: black;
 }
-
-.containerFooter {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
-  width: 100vw;
-  height: 80%;
-}
-
-.footerPolitic {
+#footer .footerPolitic {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -73,14 +47,34 @@ main {
   height: 10%;
   gap: 1em;
 }
+#footer .containerFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 80%;
+}
+#footer .containerFooter .redesSociales a {
+  color: aliceblue;
+  font-family: sedgwick ave display;
+}
+#footer .containerFooter .redesSociales i {
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 0.5em;
+}
+#footer .containerFooter .redesSociales p {
+  font-family: sedgwick ave display;
+}
 
 @media screen and (max-width: 650px) {
-  .containerFooter {
+  #footer {
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40em;
   }
-  .footerPolitic {
+  #footer .footerPolitic {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -88,16 +82,16 @@ main {
     font-size: 10px;
     gap: 0;
   }
-  .logofooter2 {
+  #footer .containerFooter {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #footer .containerFooter .logofooter2 {
     height: 60px;
   }
-  .redesSociales i {
+  #footer .containerFooter .redesSociales i {
     font-size: 15px;
-  }
-  #footer {
-    display: flex;
-    flex-wrap: wrap;
-    height: 40em;
   }
 }
 /*=======MAININDEX========*/
@@ -173,8 +167,7 @@ main {
   align-items: center;
   text-align: center;
 }
-
-.headerSpidermanImg {
+.headerSpiderman .headerSpidermanImg {
   font-size: 1em;
 }
 
@@ -186,9 +179,10 @@ main {
   position: relative;
   margin-top: 1em;
 }
-
 .allGames h2 {
-  font-size: 1.5em;
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .contenedor__galeriaJuegos {
@@ -199,8 +193,7 @@ main {
   justify-content: center;
   align-items: center;
 }
-
-.contenedor__galeriaJuegos--1 {
+.contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 {
   width: 83vw;
   height: 65em;
   display: grid;
@@ -209,38 +202,32 @@ main {
   gap: 1.3em;
   grid-area: "galeriajuegos1" "galeriajuegos2" "galeriajuegos3" "galeriajuegos4" "galeriajuegos5" "galeriajuegos6";
 }
-
-.galeriajuegos1 {
+.contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos1 {
   grid-area: "galeriajuegos1";
   background-image: url(../images/games/bacon.jpg);
   background-size: contain;
 }
-
-.galeriajuegos2 {
+.contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos2 {
   grid-area: "galeriajuegos2";
   background-image: url(../images/games/marvelpuzzlequest_lob_crd_02_4.jpg);
   background-size: cover;
 }
-
-.galeriajuegos3 {
+.contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos3 {
   grid-area: "galeriajuegos3";
   background-image: url(../images/games/marvelsavengers_lob_crd_01.jpg);
   background-size: cover;
 }
-
-.galeriajuegos4 {
+.contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos4 {
   grid-area: "galeriajuegos4";
   background-image: url(../images/games/marvelsguardiansofthegalaxy_lob_crd_02.jpg);
   background-size: cover;
 }
-
-.galeriajuegos5 {
+.contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos5 {
   grid-area: "galeriajuegos5";
   background-image: url(../images/games/marvelspidermangames.jpg);
   background-size: cover;
 }
-
-.galeriajuegos6 {
+.contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos6 {
   grid-area: "galeriajuegos6";
   background-image: url(../images/games/msmmm_lob_crd_02.jpg);
   background-size: cover;
@@ -253,13 +240,20 @@ main {
   gap: 2em;
   align-items: center;
 }
-
 .buttons a {
   font-size: 1.2em;
 }
 
 @media screen and (max-width: 1100px) {
-  .contenedor__galeriaJuegos--1 {
+  .contenedor__galeriaJuegos {
+    position: relative;
+    width: 100vw;
+    height: 100em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 {
     width: 70vw;
     height: 95%;
     display: grid;
@@ -269,41 +263,33 @@ main {
     row-gap: 4em;
     grid-area: "galeriajuegos1" "galeriajuegos2" "galeriajuegos3" "galeriajuegos4" "galeriajuegos5" "galeriajuegos6";
   }
-  .contenedor__galeriaJuegos {
-    position: relative;
-    width: 100vw;
-    height: 100em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .headerSpiderman {
     background-position: center;
   }
 }
-@media screen and (max-width: 877px) {
-  .contenedor__galeriaJuegos--1 {
-    width: 70vw;
-    height: 98%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    row-gap: 4em;
-    grid-area: "galeriajuegos1" "galeriajuegos2" "galeriajuegos3" "galeriajuegos4" "galeriajuegos5" "galeriajuegos6";
-  }
+@media screen and (max-width: 800px) {
   .contenedor__galeriaJuegos {
     position: relative;
     width: 100vw;
-    height: 300em;
+    height: 90em;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 {
+    width: 80vw;
+    height: 80em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 3em;
+    grid-area: "galeriajuegos1" "galeriajuegos2" "galeriajuegos3" "galeriajuegos4" "galeriajuegos5" "galeriajuegos6";
   }
   .headerSpiderman {
     background-position: center right;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   .contenedor__galeriaJuegos {
     position: relative;
     width: 100vw;
@@ -311,6 +297,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
+  }
+  .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 {
+    display: grid;
+    height: 200em;
+    width: 70vw;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2em;
+    grid-area: "galeriajuegos1" "galeriajuegos2" "galeriajuegos3" "galeriajuegos4" "galeriajuegos5" "galeriajuegos6";
   }
   .headerSpidermanImg p {
     display: none;
@@ -581,10 +578,12 @@ main {
 
 .marvelMoviesH2 {
   text-align: center;
-  font-size: 20em;
   width: 100vw;
-  margin-top: 0.1em;
-  margin-bottom: 0.1em;
+}
+.marvelMoviesH2 h2 {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bold;
 }
 
 .gridMovies__container--flex {
@@ -597,7 +596,7 @@ main {
 }
 .gridMovies__container--flex .gridMovies__container {
   display: grid;
-  height: 80em;
+  height: 55em;
   width: 70vw;
   position: relative;
   grid-template-columns: repeat(3, 1fr);
@@ -652,35 +651,212 @@ main {
 }
 
 @media screen and (max-width: 1200px) {
+  .marvelMoviesH2 h2 {
+    margin-bottom: 1em;
+  }
+  .gridMovies__container--flex {
+    position: relative;
+    width: 100vw;
+    height: 80em;
+  }
   .gridMovies__container--flex .gridMovies__container {
     display: grid;
     height: 80em;
-    width: 50vw;
+    width: 53vw;
     position: relative;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    gap: 2em;
+    gap: 4em;
     grid-area: "movie1" "movie2" "movie3" "movie4" "movie5" "movie6";
   }
 }
 @media screen and (max-width: 800px) {
+  .marvelMoviesH2 h2 {
+    margin-bottom: 1em;
+  }
   .gridMovies__container--flex {
     position: relative;
     width: 100vw;
-    height: 130em;
+    height: 90em;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   .gridMovies__container--flex .gridMovies__container {
     display: grid;
-    height: 130em;
-    width: 40vw;
+    height: 80em;
+    width: 80vw;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3em;
+    grid-area: "movie1" "movie2" "movie3" "movie4" "movie5" "movie6";
+  }
+}
+@media screen and (max-width: 520px) {
+  .marvelMoviesH2 h2 {
+    margin-bottom: 1em;
+  }
+  .gridMovies__container--flex {
+    width: 100vw;
+    height: 200em;
+  }
+  .gridMovies__container--flex .gridMovies__container {
+    display: grid;
+    height: 200em;
+    width: 70vw;
     position: relative;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    gap: 3em;
+    gap: 2em;
     grid-area: "movie1" "movie2" "movie3" "movie4" "movie5" "movie6";
+  }
+  .headerMovies h1 {
+    backdrop-filter: blur(0.3px);
+    box-shadow: 0px 10px 10px 10px rgba(43, 21, 21, 0.733);
+    font-size: 1.2em;
+    margin-bottom: 2em;
+  }
+  .headerMovies h2 {
+    backdrop-filter: blur(2px);
+    box-shadow: 0px 10px 10px 10px rgba(10, 6, 6, 0.555);
+    font-size: 1.2em;
+  }
+}
+.headerTvShows {
+  background-image: url(../images/index/loki_s2_base_set_dsk_02.jpg);
+  color: #fff;
+  width: 100vw;
+  height: 30em;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.headerTvShows h1, .headerTvShows h2 {
+  font-size: 1.6em;
+}
+
+.h3MarvelTv {
+  text-align: center;
+  width: 100vw;
+}
+.h3MarvelTv h3 {
+  margin-top: 2em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.gridTvShows__flex {
+  position: relative;
+  width: 100vw;
+  height: 80em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gridTvShows__flex .gridTvShows__grid {
+  display: grid;
+  height: 55em;
+  width: 70vw;
+  position: relative;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 4em;
+  grid-area: "Tvimg1" "Tvimg2" "Tvimg3" "Tvimg4" "Tvimg5" "Tvimg6";
+}
+.gridTvShows__flex .gridTvShows__grid .Tvimg1 {
+  background-image: url(../images/tvshows/cloakanddagger_lob_crd_02_1.jpg);
+  background-size: cover;
+}
+.gridTvShows__flex .gridTvShows__grid .Tvimg2 {
+  background-image: url(../images/tvshows/daredevilss3_lob_crd_02.jpg);
+  background-size: cover;
+}
+.gridTvShows__flex .gridTvShows__grid .Tvimg3 {
+  background-image: url(../images/tvshows/echo_lob_crd_02.jpg);
+  background-size: cover;
+}
+.gridTvShows__flex .gridTvShows__grid .Tvimg4 {
+  background-image: url(../images/tvshows/falcws_lob_crd_03.jpg);
+  background-size: cover;
+}
+.gridTvShows__flex .gridTvShows__grid .Tvimg5 {
+  background-image: url(../images/tvshows/hawkeye_lob_crd_04.jpg);
+  background-size: cover;
+}
+.gridTvShows__flex .gridTvShows__grid .Tvimg6 {
+  background-image: url(../images/tvshows/loki_lob_crd_04.jpg);
+  background-size: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .h3MarvelTv h3 {
+    margin-bottom: 1em;
+  }
+  .gridTvShows__flex {
+    width: 100vw;
+    height: 80em;
+    margin-bottom: 3em;
+  }
+  .gridTvShows__flex .gridTvShows__grid {
+    display: grid;
+    height: 80em;
+    width: 53vw;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2em;
+    grid-area: "Tvimg1" "Tvimg2" "Tvimg3" "Tvimg4" "Tvimg5" "Tvimg6";
+  }
+}
+@media screen and (max-width: 800px) {
+  .h3MarvelTv h3 {
+    margin-bottom: 1em;
+  }
+  .gridTvShows__flex {
+    position: relative;
+    width: 100vw;
+    height: 90em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gridTvShows__flex .gridTvShows__grid {
+    display: grid;
+    height: 80em;
+    width: 80vw;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 3em;
+    grid-area: "Tvimg1" "Tvimg2" "Tvimg3" "Tvimg4" "Tvimg5" "Tvimg6";
+  }
+}
+@media screen and (max-width: 520px) {
+  .h3MarvelTv h3 {
+    margin-bottom: 1em;
+  }
+  .gridTvShows__flex {
+    width: 100vw;
+    height: 200em;
+  }
+  .gridTvShows__flex .gridTvShows__grid {
+    display: grid;
+    height: 200em;
+    width: 70vw;
+    position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2em;
+    grid-area: "Tvimg1" "Tvimg2" "Tvimg3" "Tvimg4" "Tvimg5" "Tvimg6";
+  }
+  .headerTvShows h1, .headerTvShows h2 {
+    font-size: 1.2em;
   }
 }
 
