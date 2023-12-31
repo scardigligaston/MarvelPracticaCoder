@@ -1,6 +1,6 @@
 .headerMovies { 
     background-image: url(../images/movies/themarvels_lob_mas_min_mob_01.jpg);
-    color: #fff;
+    color: #000000;
     width: 100vw;
     height: 30em;
     background-size: cover;
@@ -11,14 +11,32 @@
     align-items: center;
     text-align: center;
     flex-direction: column;
+
+    .headerblur {
+        width: 100%;
+        background-color: rgba(240, 240, 240, 0.7);
+
+
+
+        h1, h2{ 
+            text-shadow: 3px -1px 6px rgba(0,0,0,0.85);
+           
+    
+        }
+    }
+
+    
+    
       
 }
+
 .marvelMoviesH2 { 
     text-align: center;
-    
     width: 100vw;
+    
    
     h2 { 
+        
         margin-top: 2em;
         font-size: 2em;
         font-weight: bold;
@@ -34,6 +52,9 @@
     align-items: center;
 
     .gridMovies__container { 
+        filter: drop-shadow(0px 40px 51px #000000);
+        -webkit-filter: drop-shadow(0px 40px 51px #000000);
+        -moz-filter: drop-shadow(0px 40px 51px #000000);
         display: grid;
         height: 55em;
         width: 70vw;
@@ -49,32 +70,38 @@
         .movie1 { 
             grid-area: "movie1";
             background-image: url(../images/movies/antman.jpg);
-            background-size: contain;
+            background-size: cover;
+            background-position: center;
         }
         .movie2 { 
             grid-area: "movie2";
             background-image: url(../images/movies/avengersendgame.jpg);
-            background-size: contain;
+            background-size: cover;
+            background-position: center;
         }
         .movie3 {
             grid-area: "movie3";
             background-image: url(../images/movies/avengersinfinitywar.jpg);
-            background-size: contain;
+            background-size: cover;
+            background-position: center;
         }
         .movie4 { 
             grid-area: "movie4";
             background-image: url(../images/movies/avengerssecretwars.jpg);
-            background-size: contain;
+            background-size: cover;
+            background-position: center;
         }
         .movie5 { 
             grid-area: "movie5";
             background-image: url(../images/movies/blackpantherwakandaforever_lob_crd_06.jpg);
-            background-size: contain;
+            background-size: cover;
+            background-position: center;
         }
         .movie6 { 
             grid-area: "movie6";
             background-image: url(../images/movies/themarvels_lob_mas_min_mob_01.jpg);
-            background-size: contain; 
+            background-size: cover;
+            background-position: center; 
 
         }
 
@@ -85,6 +112,7 @@
 
 }
 .buttoms { 
+    
     margin-top: 1em;
     position: relative;
     display: flex;
@@ -168,11 +196,19 @@
         }
 
     }
+    .buttoms { 
+    
+        margin-top: 4em;
+    }
     
 
     
 }
 @media screen and (max-width:520px) {
+    .buttoms { 
+    
+        margin-top: 6em; 
+    }
     .marvelMoviesH2 { 
         h2 { 
             margin-bottom: 1em;
@@ -202,23 +238,5 @@
         
         }
     }
-    .headerMovies {
-        
-         
-        h1 { 
-            backdrop-filter: blur( .3px);
-            box-shadow: 0px 10px 10px 10px (rgba(43, 21, 21, 0.733));
-            font-size: 1.2em;
-            margin-bottom: 2em;
-
-        }
-        h2 {
-            backdrop-filter: blur(2px);
-            box-shadow: 0px 10px 10px 10px(rgba(10, 6, 6, 0.555));
-            font-size: 1.2em;
-
-
-        } 
-    }
-    
+   
 }

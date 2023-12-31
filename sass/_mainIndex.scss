@@ -1,59 +1,269 @@
 /*=======MAININDEX========*/
 #main{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     background-image: url(../images/index/marvel-background-web.jpg);
+
+    #carousel1 {
+        width: 80vw; 
+        background-color: #000000;
+        box-shadow: 
+        30px 0 20px rgba(0, 0, 0, 0.6),
+        -30px 0 20px rgba(0, 0, 0, .6);
+        
+        .logoblade { 
+            display: absolute;
+            width: 15.8em;
+            height: 4.5em;
+            margin-left: -6em;
+            background-image: url(../images/index/logoblade.png);
+            background-size: cover;
+        }
+        .logoLoki { 
+            display: absolute;
+            width: 16em;
+            height: 8em;
+            margin-left: -8em;
+            margin-bottom: 3em;
+            background-image: url(../images/index/LOKIS2.jpg);
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        
+        a {
+            z-index: 100;
+            color: rgb(255, 255, 255);
+            background-color: rgba(207, 13, 13, 0.829);
+            display: block;
+            width: 8em;
+            border-width: 0px 2px 0px 2px;
+            border-style: solid;           
+            box-sizing: border-box;            
+            border-color: #fff;
+            border-radius: 69px 0px 96px 0px;
+            -webkit-border-radius: 69px 0px 96px 0px;
+            -moz-border-radius: 69px 0px 96px 0px;
+            box-shadow: 58px 12px 52px 18px rgba(0,0,0,0.81);
+            -webkit-box-shadow: 58px 12px 52px 18px rgba(0,0,0,0.81);
+            -moz-box-shadow: 58px 12px 52px 18px rgba(0,0,0,0.81);
+           
+        }
+     
+        
+    }
+    @media screen and (max-width:750px) {
+            
+        #carousel1 {
+    
+            a { 
+                display: inline-block;
+                width: 8em;
+                font-size: .8em;
+            }
+            .logoLoki { 
+                display: absolute;
+                width: 10em;
+                height: 6em;
+                margin-left: -5em;
+                margin-bottom: -3em;
+                background-image: url(../images/index/LOKIS2.jpg);
+                background-size: cover;
+                background-position: center;
+    
+            }
+            .logoblade { 
+                display: absolute;
+                width: 10em;
+                height: 3em;
+                margin-left: -5em;
+                margin-bottom: -3em;
+                background-image: url(../images/index/logoblade.png);
+                background-size: cover;
+            }
+        }
+        
+        
+    }
+    @media screen and (max-width:480px) {
+            
+        #carousel1 {
+    
+            a { 
+                display: inline-block;
+                width: 8em;
+                font-size: .8em;
+            }
+            .logoLoki { 
+                display: none;
+    
+            }
+            .logoblade { 
+                display: none;
+           
+            }
+        }     
+    }
+    @media screen and (max-width:1200px) {
+            
+        #carousel1 {
+    
+            a { 
+                display: inline-block;
+                width: 8em;
+                font-size: .8em;
+            }
+            .logoLoki { 
+                display: absolute;
+                width: 13em;
+                height: 8em;
+                margin-left: -6em;
+                margin-bottom: -3em;
+               
+    
+            }
+            .logoblade { 
+                display: absolute;
+                width: 14em;
+                height: 4em;
+                margin-left: -6em;
+                margin-bottom: -2em;
+            }
+           
+        }     
+    }
+   
+    
+    #carousel2 {
+        width: 80vw; 
+        background-color: #000000;
+        box-shadow: 
+        30px 0 20px rgba(0, 0, 0, 0.6),
+        -30px 0 20px rgba(0, 0, 0, .6);
+
+        .logowhatif { 
+            display: absolute;
+            width: 12em;
+            height: 6em;
+            margin-left: -4em;
+            margin-bottom: 3em;
+            background-image: url(../images/index/whatifs2_log_eye_02.png);
+            background-size: cover;
+
+        }
+
+        .logoDisney { 
+            display: absolute;
+            width: 8em;
+            height: 4em;
+            margin-left: -9em;
+            margin-bottom: -2em;
+            background-image: url(../images/index/logodisney.png);
+            background-size: cover;
+        }
+    
+        a { 
+            z-index: 100;
+            color: white;
+            
+            display: block;
+            width: 8em;
+            border-width: 0px 2px 0px 2px;
+            border-style: solid;
+            background-color: rgba(207, 13, 13, 0.829);
+            box-sizing: border-box;
+            
+            border-color: #fff;
+            border-radius: 69px 0px 96px 0px;
+            -webkit-border-radius: 69px 0px 96px 0px;
+            -moz-border-radius: 69px 0px 96px 0px;
+            box-shadow: 58px 12px 52px 18px rgba(0,0,0,0.81);
+            -webkit-box-shadow: 58px 12px 52px 18px rgba(0,0,0,0.81);
+            -moz-box-shadow: 58px 12px 52px 18px rgba(0,0,0,0.81);
+        }
+        
+       }
+
+    @media screen and (max-width:750px) {   
+        #carousel2 {
+            a { 
+                display: inline-block;
+                width: 8em;
+                font-size: .8em;
+            }
+            .logowhatif { 
+                width: 12em;
+                height: 5em;
+                margin-left: -4em;
+                margin-bottom: 1em;
+    
+            }
+            .logoDisney  { 
+                width: 8em;
+                height: 4em;
+                margin-left: -4em;
+                margin-bottom: -2em;
+
+                
+            }
+
+        }    
+        
+    }
+    @media screen and (max-width:480px) {
+        #carousel2 {
+            
+            a { 
+                display: inline-block;
+                width: 8em;
+                font-size: .8em;
+            }
+            .logowhatif { 
+                display: none;
+            }
+            .logoDisney { 
+                display: none;
+            }
+
+
+        }
+        
+    }
+   
+        
+    
+    #carousel3 {
+    
+        width: 80vw; 
+        background-color: #000000;
+        box-shadow: 
+        30px 0 20px rgba(0, 0, 0, 0.6),
+        -30px 0 20px rgba(0, 0, 0, .6);
+        
+    
+        a {
+            z-index: 100;
+            color: white;        
+            display: block;
+            width: 8em;
+            border-width: 0px 2px 0px 2px;
+            border-style: solid;
+            background-color: rgba(207, 13, 13, 0.829);
+            box-sizing: border-box;            
+            border-color: #fff;
+            border-radius: 69px 0px 96px 0px;
+            -webkit-border-radius: 69px 0px 96px 0px;
+            -moz-border-radius: 69px 0px 96px 0px;
+            box-shadow: 58px 12px 52px 18px rgba(0,0,0,0.81);
+            -webkit-box-shadow: 58px 12px 52px 18px rgba(0,0,0,0.81);
+            -moz-box-shadow: 58px 12px 52px 18px rgba(0,0,0,0.81);
+        }
+        
+    }
+    
     
 }
-#carousel1, #carousel2, #carousel3 { 
-    width: 80vw; 
-    background-color: #f0f0f0;
-    box-shadow: 
-    30px 0 20px rgba(0, 0, 0, 0.6),
-    -30px 0 20px rgba(0, 0, 0, .6);
-}
-#carousel1 a {
-    z-index: 100;
-    color: white;
-    display: block;
-    width: 8em;
-    border-width: 1px 2px 1px 2px;
-    border-style: solid;
-    background-color: transparent;
-    box-sizing: border-box;
-    cursor: pointer;
-    border-color: #fff;
-   border-radius: 2px;
-   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
-}
-#carousel2 a { 
-    z-index: 100;
-    color: white;
-    display: block;
-    width: 8em;
-    border-width: 1px 2px 1px 2px;
-    border-style: solid;
-    background-color: transparent;
-    box-sizing: border-box;
-    cursor: pointer;
-    border-color: #fff;
-   border-radius: 2px;
-   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
 
-}
-#carousel3 a {
-    z-index: 100;
-    color: white;
-    display: block;
-    width: 8em;
-    border-width: 1px 2px 1px 2px;
-    border-style: solid;
-    background-color: transparent;
-    box-sizing: border-box;
-    cursor: pointer;
-    border-color: #fff;
-   border-radius: 2px;
-   box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
-}
+

@@ -35,6 +35,9 @@
     align-items: center;
 
     .gridTvShows__grid { 
+        filter: drop-shadow(0px 40px 51px #000000);
+        -webkit-filter: drop-shadow(0px 40px 51px #000000);
+        -moz-filter: drop-shadow(0px 40px 51px #000000);
         display: grid;
         height: 55em;
         width: 70vw;
@@ -49,6 +52,7 @@
         .Tvimg1 { 
             background-image: url(../images/tvshows/cloakanddagger_lob_crd_02_1.jpg);
             background-size: cover;
+            
         }
         .Tvimg2 {
             background-image: url(../images/tvshows/daredevilss3_lob_crd_02.jpg);

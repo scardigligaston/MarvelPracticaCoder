@@ -42,12 +42,15 @@
     align-items: center;
 
     .contenedor__galeriaJuegos--1 { 
-        width: 83vw;
-        height: 65em;
+        filter: drop-shadow(0px 40px 51px #000000);
+        -webkit-filter: drop-shadow(0px 40px 51px #000000);
+        -moz-filter: drop-shadow(0px 40px 51px #000000);
+        width: 70vw;
+        height: 55em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 1.3em;
+        gap: 4em;
         grid-area: 
         "galeriajuegos1" "galeriajuegos2" "galeriajuegos3"
         "galeriajuegos4" "galeriajuegos5" "galeriajuegos6"
@@ -56,31 +59,37 @@
             grid-area: "galeriajuegos1";
             background-image: url(../images/games/bacon.jpg);
             background-size: contain;
+            background-position: center;
         }
         .galeriajuegos2 { 
             grid-area: "galeriajuegos2";
             background-image: url(../images/games/marvelpuzzlequest_lob_crd_02_4.jpg);
             background-size: cover;
+            background-position: center;
         }
         .galeriajuegos3 { 
             grid-area:"galeriajuegos3";
             background-image: url(../images/games/marvelsavengers_lob_crd_01.jpg);
             background-size: cover;
+            background-position: center;
         }
         .galeriajuegos4 { 
             grid-area: "galeriajuegos4";
             background-image: url(../images/games/marvelsguardiansofthegalaxy_lob_crd_02.jpg);
             background-size: cover;
+            background-position: center;
         }
         .galeriajuegos5 { 
             grid-area: "galeriajuegos5";
             background-image: url(../images/games/marvelspidermangames.jpg);
             background-size: cover;
+            background-position: center;
         }
         .galeriajuegos6 {
             grid-area: "galeriajuegos6";
             background-image: url(../images/games/msmmm_lob_crd_02.jpg);
             background-size: cover;
+            background-position: center;
            
         }
 
@@ -135,6 +144,10 @@
     
 }
 @media screen and (max-width: 800px) { 
+    .buttons { 
+    
+        margin-top: 4em;
+    }
    
     .contenedor__galeriaJuegos {
         position: relative;
@@ -167,6 +180,7 @@
     
 }
 @media screen and (max-width: 520px) {
+  
     .contenedor__galeriaJuegos {
         position: relative;
         width: 100vw;
@@ -201,6 +215,7 @@
     } 
     .buttons { 
         gap: .8em;
+        margin-top: 6em;
          a {     
             font-size: 1em;    
         }

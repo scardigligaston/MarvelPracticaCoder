@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
 	<meta charset="utf-8">
+  <!--SEO-->
   <meta name="author" content="scardigli_gaston">
   <meta name="keywords" content="marvel, spiderman2, wolverine, movies, tvshows">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +17,7 @@
   
   </head>
 <body> 
-  <!--NAV BOOTSTRAP SEGUNDA ENTREGA-->
+  <!--NAV BOOTSTRAP-->
   <nav class="navbar  navbar-expand-lg bg-black" data-bs-theme="dark" id="nav">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
@@ -55,7 +56,20 @@
   <!--main--> <!--CAROUSEL BOOTSTRAP-->
   <main id="main">
       <section id="carousel1">
-          <article class="mainHeaderIndex--news"><div id="carouselExample" class="carousel slide">
+        <style>
+          /* Ajustes específicos para el efecto fade */
+          .carousel-fade .carousel-item {
+              background-color: #000;
+              background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%);
+              opacity: 0; /* Inicialmente, todos los elementos son transparentes */
+              transition: opacity .8s ease-in-out; /* Transición de 0.5 segundos con función ease-in-out */
+          }
+  
+          .carousel-fade .carousel-item.active {
+              opacity: 1; /* El elemento activo se vuelve opaco */
+          }
+      </style>
+          <article class="mainHeaderIndex--news"><div id="carouselExample" class="carousel slide carousel-fade"  data-bs-ride= "carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -63,34 +77,35 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/index/msm2_1003_com_mas_mob_01.jpg" class="d-block w-100" alt="spiderman2">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>SPIDERMAN 2</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="logo-carousel"></div>
+                <img src="images/index/msm2_1003_com_mas_mob_01.jpg" class="d-block w-100" alt="spiderman2" style="  object-fit: cover;">
+                <div class="carousel-caption d-block">
+                  <p class="carousel-caption d-none d-md-block">The Great Hunt Begins. We're thrilled to reveal the first-ever gameplay of Marvel's Spider-Man 2, coming fall 2023 on PlayStation 5!.</p>
                   <a href="#">SEE MORE</a>
                 </div>
-              </div>
+              </div> 
               <div class="carousel-item">
-                <img src="images/index/loki_s2_base_set_dsk_02.jpg" class="d-block w-100" alt="LOKIS2">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="images/index/loki_s2_base_set_dsk_02.jpg" class="d-block w-100" alt="LOKIS2" style=" object-fit: cover;" >
+                <div class="carousel-caption d-block">
+                  <div class="logoLoki"></div>
                   <a href="#">LEARN MORE</a>
-                  <p>Marvel Studios' Loki Season 2, all episodes now streaming only on Disney+.</p>
+                  <p class="carousel-caption d-none d-md-block">Marvel Studios' Loki Season 2, all episodes now streaming only on Disney+.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/index/dplus_lob_mas_mob_05.jpg" class="d-block w-100" alt="DISNEY">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Disney</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                <img src="images/index/blade.jpg" class="d-block w-100" alt="blade" style=" object-fit: cover;">
+                <div class="carousel-caption d-block">
+                  <div class="logoblade"></div>
+                  <p class="carousel-caption d-none d-md-block">Watch the Game Awards 2023 trailer for 'Marvel's Blade' now!</p>
                   <a href="#">SEE NOW</a>
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-ride= "carousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"  data-bs-ride= "carousel" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -98,7 +113,20 @@
         </section>
          
         <section id="carousel2">
-          <article class="mainHeaderIndex--news"><div id="carouselExample1" class="carousel slide">
+          <style>
+            /* Ajustes específicos para el efecto fade */
+            .carousel-fade .carousel-item {
+                background-color: #000;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%);
+                opacity: 0; /* Inicialmente, todos los elementos son transparentes */
+                transition: opacity .8s ease-in-out; /* Transición de 0.5 segundos con función ease-in-out */
+            }
+    
+            .carousel-fade .carousel-item.active {
+                opacity: 1; /* El elemento activo se vuelve opaco */
+            }
+        </style>
+          <article class="mainHeaderIndex--news"><div id="carouselExample1" class="carousel slide carousel-fade" data-bs-ride= "carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExample1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExample1" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -106,25 +134,26 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/index/spiderman2.jpg" class="d-block w-100" alt="spiderman2">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>SPIDERMAN 2</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <img src="images/index/whatifs.jpg" class="d-block w-100" alt="whatsif" style="object-fit: cover;">
+                <div class="carousel-caption d-block">
+                  <div class="logowhatif"></div>
+                  <p class="carousel-caption d-none d-md-block ">I am The Watcher. Check back each day at 9am PST for new reveals and exclusive gifts as we watch Season 2 of Marvel Studios’ What If…? Premiering on Disney+ Dec 22nd</p>
                   <a href="#">SEE MORE</a>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/index/loki_s2_base_set_dsk_02.jpg" class="d-block w-100" alt="LOKIS2">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="images/index/disney.jpg" class="d-block w-100" alt="disney" style=" object-fit: cover;">
+                <div class="carousel-caption d-block">
+                  <div class="logoDisney"></div>
                   <a href="#">LEARN MORE</a>
-                  <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                  
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/index/dplus_lob_mas_mob_05.jpg" class="d-block w-100" alt="DISNEY">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Disney</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                <img src="images/index/games_2023-1560x876.jpg" class="d-block w-100" alt="games" style="object-fit: cover;">
+                <div class="carousel-caption d-block">
+                
+                  <p class="carousel-caption d-none d-md-block">The Best Moments in Marvel Games from 2023</p>
                   <a href="#">SEE NOW</a>
                 </div>
               </div>
@@ -140,7 +169,20 @@
           </div>
         </section>
         <section id="carousel3">
-          <article class="mainHeaderIndex--news"><div id="carouselExampleCaptions" class="carousel slide">
+          <style>
+            /* Ajustes específicos para el efecto fade */
+            .carousel-fade .carousel-item {
+                background-color: #000;
+                background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1) 100%);
+                opacity: 0; /* Inicialmente, todos los elementos son transparentes */
+                transition: opacity .8s ease-in-out; /* Transición de 0.5 segundos con función ease-in-out */
+            }
+    
+            .carousel-fade .carousel-item.active {
+                opacity: 1; /* El elemento activo se vuelve opaco */
+            }
+        </style>
+          <article class="mainHeaderIndex--news"><div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride= "carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -148,25 +190,25 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="images/index/spiderman2.jpg" class="d-block w-100" alt="spiderman2">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>SPIDERMAN 2</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <img src="images/index/haileycoopersp2.jpg" class="d-block w-100" alt="spiderman2" style="object-fit: cover; image-rendering: pixelated;">
+                <div class="carousel-caption d-block">
+                  <h5>HEILEY COOPER</h5>
+                  <p class="carousel-caption d-none d-md-block">'Marvel's Spider-Man 2' Explained: Who Is Hailey Cooper?.</p>
                   <a href="#">SEE MORE</a>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/index/loki_s2_base_set_dsk_02.jpg" class="d-block w-100" alt="LOKIS2">
-                <div class="carousel-caption d-none d-md-block">
-                  <a href="#">LEARN MORE</a>
-                  <p>Lorem ipsum dolor sit amet consectetur adipis</p>
+                <img src="images/index/christmas_0.png" class="d-block w-100" alt="christmas" style="object-fit: cover; ">
+                <div class="carousel-caption d-block">
+                  <a href="#">Marvel Heroes</a>
+                  <p class="carousel-caption d-none d-md-block"><strong>Holiday Gift Guide 2023</strong>  Deck the halls with heroes!</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="images/index/dplus_lob_mas_mob_05.jpg" class="d-block w-100" alt="DISNEY">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Disney</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                <img src="images/index/postersp2ps5.jpg" class="d-block w-100" alt="ps5" style="object-fit: cover; image-rendering: pixelated; ">
+                <div class="carousel-caption d-block">
+                  <h5 class="carousel-caption d-none d-md-block">Marvel's Spider-Man 2 | Accolades</h5>
+                  <p class="carousel-caption d-none d-md-block">Spider-Men, Peter Parker and Miles Morales, return for an exciting new adventure in the critically acclaimed Marvel's Spider-Man franchise for the PS5 console. Marvel's Spider-Man 2 out now!</p>
                   <a href="#">SEE NOW</a>
                 </div>
               </div>
@@ -211,6 +253,7 @@
            <p>Política de Privacidad.</p>
        </section>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>   
 </body>
 </html>

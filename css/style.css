@@ -101,56 +101,199 @@ main {
   align-items: center;
   background-image: url(../images/index/marvel-background-web.jpg);
 }
-
-#carousel1, #carousel2, #carousel3 {
+#main #carousel1 {
   width: 80vw;
-  background-color: #f0f0f0;
+  background-color: #000000;
   box-shadow: 30px 0 20px rgba(0, 0, 0, 0.6), -30px 0 20px rgba(0, 0, 0, 0.6);
 }
-
-#carousel1 a {
-  z-index: 100;
-  color: white;
-  display: block;
-  width: 8em;
-  border-width: 1px 2px 1px 2px;
-  border-style: solid;
-  background-color: transparent;
-  box-sizing: border-box;
-  cursor: pointer;
-  border-color: #fff;
-  border-radius: 2px;
-  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
+#main #carousel1 .logoblade {
+  display: absolute;
+  width: 15.8em;
+  height: 4.5em;
+  margin-left: -6em;
+  background-image: url(../images/index/logoblade.png);
+  background-size: cover;
 }
-
-#carousel2 a {
-  z-index: 100;
-  color: white;
-  display: block;
-  width: 8em;
-  border-width: 1px 2px 1px 2px;
-  border-style: solid;
-  background-color: transparent;
-  box-sizing: border-box;
-  cursor: pointer;
-  border-color: #fff;
-  border-radius: 2px;
-  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
+#main #carousel1 .logoLoki {
+  display: absolute;
+  width: 16em;
+  height: 8em;
+  margin-left: -8em;
+  margin-bottom: 3em;
+  background-image: url(../images/index/LOKIS2.jpg);
+  background-size: cover;
+  background-position: center;
 }
-
-#carousel3 a {
+#main #carousel1 a {
+  z-index: 100;
+  color: rgb(255, 255, 255);
+  background-color: rgba(207, 13, 13, 0.829);
+  display: block;
+  width: 8em;
+  border-width: 0px 2px 0px 2px;
+  border-style: solid;
+  box-sizing: border-box;
+  border-color: #fff;
+  border-radius: 69px 0px 96px 0px;
+  -webkit-border-radius: 69px 0px 96px 0px;
+  -moz-border-radius: 69px 0px 96px 0px;
+  box-shadow: 58px 12px 52px 18px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 58px 12px 52px 18px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 58px 12px 52px 18px rgba(0, 0, 0, 0.81);
+}
+@media screen and (max-width: 750px) {
+  #main #carousel1 a {
+    display: inline-block;
+    width: 8em;
+    font-size: 0.8em;
+  }
+  #main #carousel1 .logoLoki {
+    display: absolute;
+    width: 10em;
+    height: 6em;
+    margin-left: -5em;
+    margin-bottom: -3em;
+    background-image: url(../images/index/LOKIS2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  #main #carousel1 .logoblade {
+    display: absolute;
+    width: 10em;
+    height: 3em;
+    margin-left: -5em;
+    margin-bottom: -3em;
+    background-image: url(../images/index/logoblade.png);
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  #main #carousel1 a {
+    display: inline-block;
+    width: 8em;
+    font-size: 0.8em;
+  }
+  #main #carousel1 .logoLoki {
+    display: none;
+  }
+  #main #carousel1 .logoblade {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #main #carousel1 a {
+    display: inline-block;
+    width: 8em;
+    font-size: 0.8em;
+  }
+  #main #carousel1 .logoLoki {
+    display: absolute;
+    width: 13em;
+    height: 8em;
+    margin-left: -6em;
+    margin-bottom: -3em;
+  }
+  #main #carousel1 .logoblade {
+    display: absolute;
+    width: 14em;
+    height: 4em;
+    margin-left: -6em;
+    margin-bottom: -2em;
+  }
+}
+#main #carousel2 {
+  width: 80vw;
+  background-color: #000000;
+  box-shadow: 30px 0 20px rgba(0, 0, 0, 0.6), -30px 0 20px rgba(0, 0, 0, 0.6);
+}
+#main #carousel2 .logowhatif {
+  display: absolute;
+  width: 12em;
+  height: 6em;
+  margin-left: -4em;
+  margin-bottom: 3em;
+  background-image: url(../images/index/whatifs2_log_eye_02.png);
+  background-size: cover;
+}
+#main #carousel2 .logoDisney {
+  display: absolute;
+  width: 8em;
+  height: 4em;
+  margin-left: -9em;
+  margin-bottom: -2em;
+  background-image: url(../images/index/logodisney.png);
+  background-size: cover;
+}
+#main #carousel2 a {
   z-index: 100;
   color: white;
   display: block;
   width: 8em;
-  border-width: 1px 2px 1px 2px;
+  border-width: 0px 2px 0px 2px;
   border-style: solid;
-  background-color: transparent;
+  background-color: rgba(207, 13, 13, 0.829);
   box-sizing: border-box;
-  cursor: pointer;
   border-color: #fff;
-  border-radius: 2px;
-  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.9);
+  border-radius: 69px 0px 96px 0px;
+  -webkit-border-radius: 69px 0px 96px 0px;
+  -moz-border-radius: 69px 0px 96px 0px;
+  box-shadow: 58px 12px 52px 18px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 58px 12px 52px 18px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 58px 12px 52px 18px rgba(0, 0, 0, 0.81);
+}
+@media screen and (max-width: 750px) {
+  #main #carousel2 a {
+    display: inline-block;
+    width: 8em;
+    font-size: 0.8em;
+  }
+  #main #carousel2 .logowhatif {
+    width: 12em;
+    height: 5em;
+    margin-left: -4em;
+    margin-bottom: 1em;
+  }
+  #main #carousel2 .logoDisney {
+    width: 8em;
+    height: 4em;
+    margin-left: -4em;
+    margin-bottom: -2em;
+  }
+}
+@media screen and (max-width: 480px) {
+  #main #carousel2 a {
+    display: inline-block;
+    width: 8em;
+    font-size: 0.8em;
+  }
+  #main #carousel2 .logowhatif {
+    display: none;
+  }
+  #main #carousel2 .logoDisney {
+    display: none;
+  }
+}
+#main #carousel3 {
+  width: 80vw;
+  background-color: #000000;
+  box-shadow: 30px 0 20px rgba(0, 0, 0, 0.6), -30px 0 20px rgba(0, 0, 0, 0.6);
+}
+#main #carousel3 a {
+  z-index: 100;
+  color: white;
+  display: block;
+  width: 8em;
+  border-width: 0px 2px 0px 2px;
+  border-style: solid;
+  background-color: rgba(207, 13, 13, 0.829);
+  box-sizing: border-box;
+  border-color: #fff;
+  border-radius: 69px 0px 96px 0px;
+  -webkit-border-radius: 69px 0px 96px 0px;
+  -moz-border-radius: 69px 0px 96px 0px;
+  box-shadow: 58px 12px 52px 18px rgba(0, 0, 0, 0.81);
+  -webkit-box-shadow: 58px 12px 52px 18px rgba(0, 0, 0, 0.81);
+  -moz-box-shadow: 58px 12px 52px 18px rgba(0, 0, 0, 0.81);
 }
 
 /*========GAMES==============*/
@@ -194,43 +337,52 @@ main {
   align-items: center;
 }
 .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 {
-  width: 83vw;
-  height: 65em;
+  filter: drop-shadow(0px 40px 51px #000000);
+  -webkit-filter: drop-shadow(0px 40px 51px #000000);
+  -moz-filter: drop-shadow(0px 40px 51px #000000);
+  width: 70vw;
+  height: 55em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 1.3em;
+  gap: 4em;
   grid-area: "galeriajuegos1" "galeriajuegos2" "galeriajuegos3" "galeriajuegos4" "galeriajuegos5" "galeriajuegos6";
 }
 .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos1 {
   grid-area: "galeriajuegos1";
   background-image: url(../images/games/bacon.jpg);
   background-size: contain;
+  background-position: center;
 }
 .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos2 {
   grid-area: "galeriajuegos2";
   background-image: url(../images/games/marvelpuzzlequest_lob_crd_02_4.jpg);
   background-size: cover;
+  background-position: center;
 }
 .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos3 {
   grid-area: "galeriajuegos3";
   background-image: url(../images/games/marvelsavengers_lob_crd_01.jpg);
   background-size: cover;
+  background-position: center;
 }
 .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos4 {
   grid-area: "galeriajuegos4";
   background-image: url(../images/games/marvelsguardiansofthegalaxy_lob_crd_02.jpg);
   background-size: cover;
+  background-position: center;
 }
 .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos5 {
   grid-area: "galeriajuegos5";
   background-image: url(../images/games/marvelspidermangames.jpg);
   background-size: cover;
+  background-position: center;
 }
 .contenedor__galeriaJuegos .contenedor__galeriaJuegos--1 .galeriajuegos6 {
   grid-area: "galeriajuegos6";
   background-image: url(../images/games/msmmm_lob_crd_02.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 .buttons {
@@ -268,6 +420,9 @@ main {
   }
 }
 @media screen and (max-width: 800px) {
+  .buttons {
+    margin-top: 4em;
+  }
   .contenedor__galeriaJuegos {
     position: relative;
     width: 100vw;
@@ -314,6 +469,7 @@ main {
   }
   .buttons {
     gap: 0.8em;
+    margin-top: 6em;
   }
   .buttons a {
     font-size: 1em;
@@ -563,7 +719,7 @@ main {
 
 .headerMovies {
   background-image: url(../images/movies/themarvels_lob_mas_min_mob_01.jpg);
-  color: #fff;
+  color: #000000;
   width: 100vw;
   height: 30em;
   background-size: cover;
@@ -574,6 +730,13 @@ main {
   align-items: center;
   text-align: center;
   flex-direction: column;
+}
+.headerMovies .headerblur {
+  width: 100%;
+  background-color: rgba(240, 240, 240, 0.7);
+}
+.headerMovies .headerblur h1, .headerMovies .headerblur h2 {
+  text-shadow: 3px -1px 6px rgba(0, 0, 0, 0.85);
 }
 
 .marvelMoviesH2 {
@@ -595,6 +758,9 @@ main {
   align-items: center;
 }
 .gridMovies__container--flex .gridMovies__container {
+  filter: drop-shadow(0px 40px 51px #000000);
+  -webkit-filter: drop-shadow(0px 40px 51px #000000);
+  -moz-filter: drop-shadow(0px 40px 51px #000000);
   display: grid;
   height: 55em;
   width: 70vw;
@@ -607,32 +773,38 @@ main {
 .gridMovies__container--flex .gridMovies__container .movie1 {
   grid-area: "movie1";
   background-image: url(../images/movies/antman.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .gridMovies__container--flex .gridMovies__container .movie2 {
   grid-area: "movie2";
   background-image: url(../images/movies/avengersendgame.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .gridMovies__container--flex .gridMovies__container .movie3 {
   grid-area: "movie3";
   background-image: url(../images/movies/avengersinfinitywar.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .gridMovies__container--flex .gridMovies__container .movie4 {
   grid-area: "movie4";
   background-image: url(../images/movies/avengerssecretwars.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .gridMovies__container--flex .gridMovies__container .movie5 {
   grid-area: "movie5";
   background-image: url(../images/movies/blackpantherwakandaforever_lob_crd_06.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 .gridMovies__container--flex .gridMovies__container .movie6 {
   grid-area: "movie6";
   background-image: url(../images/movies/themarvels_lob_mas_min_mob_01.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 .buttoms {
@@ -692,8 +864,14 @@ main {
     gap: 3em;
     grid-area: "movie1" "movie2" "movie3" "movie4" "movie5" "movie6";
   }
+  .buttoms {
+    margin-top: 4em;
+  }
 }
 @media screen and (max-width: 520px) {
+  .buttoms {
+    margin-top: 6em;
+  }
   .marvelMoviesH2 h2 {
     margin-bottom: 1em;
   }
@@ -710,17 +888,6 @@ main {
     grid-template-rows: repeat(6, 1fr);
     gap: 2em;
     grid-area: "movie1" "movie2" "movie3" "movie4" "movie5" "movie6";
-  }
-  .headerMovies h1 {
-    backdrop-filter: blur(0.3px);
-    box-shadow: 0px 10px 10px 10px rgba(43, 21, 21, 0.733);
-    font-size: 1.2em;
-    margin-bottom: 2em;
-  }
-  .headerMovies h2 {
-    backdrop-filter: blur(2px);
-    box-shadow: 0px 10px 10px 10px rgba(10, 6, 6, 0.555);
-    font-size: 1.2em;
   }
 }
 .headerTvShows {
@@ -760,6 +927,9 @@ main {
   align-items: center;
 }
 .gridTvShows__flex .gridTvShows__grid {
+  filter: drop-shadow(0px 40px 51px #000000);
+  -webkit-filter: drop-shadow(0px 40px 51px #000000);
+  -moz-filter: drop-shadow(0px 40px 51px #000000);
   display: grid;
   height: 55em;
   width: 70vw;
